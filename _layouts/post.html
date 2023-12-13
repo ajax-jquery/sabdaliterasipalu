@@ -1,0 +1,762 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+{% include metapost.html %}	
+<link id='page-skin-1' href="{{ site.url }}/assets/css/page-skin-1.css" rel="stylesheet" />
+<style id="custom-css">
+.databuku b{color:#f26926;}.databuku .product__warranty{background: url(https://www.static-src.com/frontend/product-detail/static/img/ic-correct.ec4209ab.svg) center left no-repeat; padding-left: 22px}.deskripsi-produk-panjang h2 { font-size: 1.9rem}.post-single-produk .detail-produk .harga-produk{color: #f26926; font-weight: 600}
+</style>
+<script src="{{ site.url }}/assets/js/javascript-in-head.js"></script>
+</head>
+<body class='is-post'>
+<div class='template-settings section' id='template-settings'><div class='widget HTML' data-version='2' id='HTML70'>
+<script>
+themeSetting = {
+	checkoutChat : true,
+	checkoutMarketplace : false,
+	checkoutLink : true,
+	ckcText : "Beli Sekarang",
+	ckmText : "Beli via Marketplace",
+	cklText : "Order Sekarang",
+	jmlhproduk : true,
+	nama : true,
+	email : true,
+	notelp : false,
+	alamat : true,
+	provinsi : false,
+	kota : false,
+	kodepos : false,
+	pembayaran : true,
+	pembayaranTitle : "Metode Pembayaran",
+	nomorWa : 6281229900928,
+	waBtnText : "Chat WA Admin",
+	waPesan : "Halo admin, saya mau order:",
+	checkoutChatNote : "Harga belum termasuk ongkos kirim",
+	formError : "Form wajib diisi",
+	loopProdukImage : false,
+	loopBanner : true,
+	loopTestimonial : true,
+	autoSlideProdukImage : true,
+	autoSlideBanner : true,
+	autoSlideTestimonial : true,
+	autoSlideTimer : 3,
+	shareFacebook : true,
+	shareTwitter : true,
+	shareWhatsapp : true,
+	shareTelegram : true,
+	darkMode : true,
+	autoDarkMode : true,
+	popupBoxActive : true,
+	openPopupBoxAfter : 3,
+	disablePopupBoxDays : 7,
+	relatedPosts : true,
+	jumlahRelatedPosts : 4,
+	jumlahRecentPosts : 6,
+	ajaxHomePagination : true,
+	rekbank: [
+		"BCA",
+		"BRI",
+		"OVO",
+		"DANA",
+	],
+};
+</script>
+</div></div>
+<script>//<![CDATA[
+		!function(e){var o={darkMode:!0,autoDarkMode:!0};themeOption(o);let t=e.body;if(!o.darkMode)return t.classList.add("no-darkmode"),console.log("NTULL");var e=!!o.autoDarkMode&&window.matchMedia("(prefers-color-scheme: dark)").matches,o="darkmode"===localStorage.getItem("stylemode"),a="lightmode"===localStorage.getItem("stylemode");!e&&!o||a?(localStorage.setItem("stylemode","lightmode"),t.classList.remove("dark")):(localStorage.setItem("stylemode","darkmode"),t.classList.add("dark"))}(document);
+		//]]></script>
+<div class='custom-css section' id='custom-css'><div class='widget HTML' data-version='2' id='HTML82'>
+</div></div>
+<div id='wrapper'>
+<header id='header-wrapper'>
+<div class='header'>
+<button aria-label='menu' class='navmenu-button'>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class='header-title section' id='header-title'><div class='widget Header' data-version='2' id='Header1'>
+<a href='{{ site.url }}/' title='{{ site.title }}'>
+<img loading="lazy" alt='{{ site.title }}' height='110' src='{{ site.url }}/media/logo-banner.png' title='{{ site.title }}' width='579' />
+</a>
+<div class='site-title-wrap hide-title'>
+<h2 class='site-title'>
+<a data-text='{{ site.title }}' href='{{ site.url }}/' title='{{ site.title }}'>{{ site.title }}</a>
+</h2>
+</div>
+</div></div>
+<div class='navmenu-desktop section' id='navmenu-desktop'><div class='widget HTML' data-version='2' id='HTML642'>
+<nav>
+<ul>
+<li><a href="#">Tentang</a></li><li><a href="#">Support</a></li><li><a href="#">Menu</a></li><li class="has-sub"><a href="#">Menu Lainnya</a><ul><li><a href="#">SubMenu 1</a></li><li><a href="#">SubMenu 2</a></li></ul></li>
+</ul>
+</nav>
+</div></div>
+<nav class='navmenu-mobile'>
+<div class='navmenu-list'>
+</div>
+</nav>
+<div class='navmenu-overlay'></div>
+<div class='nav-right'>
+<div id='darkmode-button'>
+<input aria-label='darkmode' class='darkmode' id='darkmode' name='darkmode' type='checkbox'/><label for='darkmode' title='darkmode'></label>
+</div>
+<label class='search-button' for='search-terms'>
+</label>
+</div>
+<div class='searchcontainer'>
+<form action='{{ site.url }}/search/?' id='search'>
+<input onkeyup="Cari()" aria-label='Cari' autocomplete='off' id='search-terms' name='ebook' placeholder='Cari...' type='text' value=''/>
+</form>
+<!--<div id="filter"></div>
+<style>
+/* ajax search */
+.ajax-search.hidden{display:none}
+.ajax-search{padding:20px 10px;background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:0px auto;border-radius:8px;animation:fadeInDown .5s linear;background-color: rgb(54, 58, 62); color: rgb(217, 223, 229); width: 100%; max-height: 562.531px; overflow: auto;}
+.ajax-search-results-empty{text-align:center}
+.ajax-search h3{color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
+.ajax-search-results{text-align:left}
+.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:5px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
+.ajax-search li:hover{border-color:#f89000}
+.ajax-search li h4{font-size:13px;font-weight:500;margin:0 15px 0 0}
+.ajax-search li h4 a{color:#000;transition:all .3s}
+.ajax-search li h4 mark{background-color:transparent;color:#f89000;text-decoration:underline;transition:all .3s}
+.ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#f89000}
+.ajax-search-image{float:left;margin:0 10px 0 0}
+.ajax-search-image img{border-radius:5px}
+.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#f89000;color:#fff;font-size:13px;padding:7px 15px;border-radius:5px;margin:15px 3px 0 3px}
+.ajax-search-pager{overflow:hidden;clear:both;position:relative}.ajax-search li:nth-child(odd){animation:bounceInLeft 1.5s}
+.ajax-search li:nth-child(even){animation:bounceInRight 1.5s}
+.ajax-search ol {color:#232323}
+/* animasi */
+@keyframes bounceInLeft{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:none;transform:none}}
+@keyframes bounceInRight{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:none;transform:none}}
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+div#Nohasil {
+    padding: 14px 14px;
+}
+/* css darkmode sesuaikan class ( .drK ) jika berbeda agar dapat berfungsi */
+.dark .ajax-search{background:#1e1e1e!important;color:rgba(255,255,255,.85)}
+.dark .ajax-search li h4 a{color:#fff}
+.dark .ajax-search li h4 a:hover{color:#fff;text-decoration:underline}
+.dark .ajax-search-pager a{background:#294db4;color:#fff;border:0}
+.dark .ajax-search-pager a:hover{background:#1c2733;color:#fff}
+.dark .ajax-search li{background:#1c1c1c;border:0;box-shadow:none}
+.dark .ajax-search li:hover{background:#1e1e1e}
+.dark .ajax-search h3{color:#fff}
+.dark .ajax-search ol {color:#fff}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> $(document).ready(function(){
+    var data = [{% for post in site.posts limit:9999 %}{"judul":"{{ post.title | xml_escape }}","isi":"{{ post.title | xml_escape }} {{ post.author | xml_escape }}","gambar":"{{ post.image }}","link":"{{ site.url }}{{ post.permalink }}"}{% if forloop.last == false %},{% endif %}{% endfor %}];
+
+$('#search-terms').keyup(function(){
+            var searchField = $(this).val().split(' ').join('').toLowerCase();
+			if(searchField === '')  {
+				$('#filter').html('');
+				return;
+			}
+			
+            var regex = new RegExp(searchField, "i");
+            var output = '<div class="ajax-search ltr ajax-search-float has-title has-url has-image" id="ajax-search"><div><ol class="ajax-search-results" id="ajax-search-results" start="1">';
+  var isinya ='';
+            
+			  $.each(data, function(key, val){
+	if ((val.isi.split(' ').join('').toLowerCase().search(regex) != -1)) {			
+				  output += '<li><p class="ajax-search-image loading"><img  alt="" src="'+val.gambar+'" style="display:block;width:60px;height:60px;"></p><h4 class="ajax-search-title"><a href="'+val.link+'" title="'+val.judul+'">'+val.judul+'</a></h4></li>';
+	
+	}else{
+output+='<div id="Nohasil">Maaf Ebook yang Anda cari belum kami input.<br>HUBUNGI PENJUAL UNTUK REQUEST EBOOK<br><a href="https://api.whatsapp.com/send?phone=6285186666836&amp;text=Halo%20min%20saya%20ingin%20memesan%20Ebook%2Cberikut%20datanya%3A%0A---%0AJudul%3A%0APenulis%3A%0APenerbit%3A%0A---%0Asaya%20berharap%20bisa%20segerah%20di%20upload%20di%20https%3A%2F%2Fsabdaliterasi.shop%2Fpage%2Febook-shop" style="border: 2px solid; display: block; margin: 7px; padding: 2px; font-weight: 600;">KLIK DISINI</a></div>';
+                }
+			  
+			  });
+  
+  
+			  output += '</ol> </div> </div>';
+  
+			
+               $('#filter').html(output);
+             
+  
+  $("label.search-button").click(function(){
+    $("input#search-terms").val('');$('#filter').html('');
+  });
+        });
+  });</script>
+
+
+	-->
+</div>
+</div>
+</header>
+<main id='main'>
+<div id='banner-container'>
+</div>
+<div id='recent-container'>
+</div>
+<div class='main-content section' id='main-content'><div class='widget Blog' data-version='2' id='Blog1'>
+<script type='application/ld+json'>
+        {
+            "@context":"http://schema.org",
+            "@type":"WebPage",
+            "name":"{% if page.title %}{{ page.title }} |{% endif %} Ebook Shop | {{ site.title }}",
+            "url":"{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}"
+        }
+        </script>
+<div class='post-container post-single post-single-produk'>
+<div class='breadcrumbs-post'>
+<div class='breadcrumbs' itemscope='itemscope' >
+<span itemprop='itemListElement' itemscope='itemscope'>
+<a href='{{ site.url }}/' itemprop='item' title='Home'>
+<meta content='1' itemprop='position'/>
+<span itemprop='name'>
+Beranda
+</span>
+</a>
+</span>
+<span class='arrow'>&#8250;</span>
+<span itemprop='itemListElement' itemscope='itemscope'>
+<meta content='2' itemprop='position'/>
+<a href='{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}#' itemprop='item' rel='nofollow' title='{% if page.author %}{{ page.author }}{% endif %}'>
+<span itemprop='name'>
+{% if page.author %}{{ page.author }}{% endif %}
+</span>
+</a>
+</span>
+<span class='arrow'>&#8250;</span>
+<span>{% if page.title %}{{ page.title }}{% endif %}</span>
+</div>
+</div>
+<div class='post-message-container'>
+</div>
+<article class='post-outer'>
+<div class='post' itemscope='itemscope'>
+<div class='post-title'>
+<h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
+</div>
+<div class='post-body'>
+<div class="gambar-produk">
+  <div class="gambar-slide">
+    <img loading="lazy" alt="{% if page.title %}{{ page.title }}{% endif %}" src="{% if page.image %}{{ page.image }}{% endif %}"/>
+  </div><div class="status-produk"></div></div><div class="detail-produk"><div class="harga-produk">Rp&#160;{% if page.harga %}{{ page.harga | money }}{% endif %}</div></div><div class="deskripsi-produk">
+<div class="databuku">
+Penulis: <b>{% if page.author %}{{ page.author }}{% endif %}</b><br>
+Bahasa: <b>Indonesia</b><br>
+Type: <b>Ebook [PDF]</b><br>
+<b class="product__warranty">EBOOK 100% ORIGINAL</b>
+</div>
+  </div>
+  
+  <div class="deskripsi-produk-panjang">
+<h3>Wajib Baca</h3><p>Cara Membeli:</p><p></p><ol><li>Klik tombol <b>Beli Sekarang</b></li><li>Kamu akan diarahkan ke halaman pembayaran</li><li>Klik tombol <b>Buy Now</b></li><li>Saat muncul Pop-up, klik lagi <b>Buy Now</b></li><li>Masukkan data diri kamu yang tepat berupa <b>Email</b>, No Hp, dan Nama kamu.</li><li>Pilih Metode Pembayaran</li><li>Lakukan pembayaran</li><li>Kamu Akan menerima Link Baca Ebook Ini di Kotak Masuk email kamu.</li><li>Always Happy To Read The Ebook</li></ol>
+ <h2>Deskripsi Buku</h2> 
+{{ content }}
+ </div>
+<div class="link-marketplace"><a rel="nofollow" class="link-tokopedia" href="https://tokopedia.com">Tokopedia</a><a rel="nofollow" class="link-shopee" href="https://shoppe.co.id">Shopee</a><a rel="nofollow" class="link-bukalapak" href="https://bukalapak.com">Bukalapak</a><a rel="nofollow" class="link-blibli" href="https://blibli.com">Blibli</a><a rel="nofollow" class="link-lazada" href="https://lazada.co.id">Lazada</a></div><script></script>
+<script>
+            !function(){var t=document.querySelector(".post-body .gambar-produk"),e=document.querySelector(".post .post-title");t||(e.style.float="none",e.style.paddingLeft="0")}();
+            </script>
+</div>
+<div id='after-content'>
+<div class='share-buttons'>
+<script>
+            var sharePostUrl = "{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}";
+            var sharePostTitle = "{% if page.title %}{{ page.title }}{% endif %}";
+            </script>
+<button aria-label='Berbagi' class='share-btn'>
+<span>Berbagi</span></button>
+<div class='share-links'>
+<div class='links'>
+</div>
+</div>
+</div>
+<div id="ms-related-post">
+  <div class="ms-related-title"><p>Produk Lainnya</p></div>
+  <ul class="ms-related-hasthumb">
+    {% for post in site.posts limit:6 %}
+    <li><div class="msr-thumb-outer"><a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"><img alt="{{ post.title }}" class="msr-thumb lazyload" data-src="{{ post.image }}" width="300" height="300"src="data:,"><div class="lazy-loading"></div></a></div><div class="msr-post-summary"><div class="msr-post-title"><a title="{{ post.title }} " href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div><div class="harga-produk">Rp&nbsp;{{ post.harga }}</div></div></li>
+    {% endfor %}  
+  </ul></div>
+
+  
+  <script>
+        var postLabels = ["Sepatu", ];
+        var relatedConfig = {
+            relatedOuter: "ms-related-post",
+            postUrl: "{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}",
+            homePageUrl: "{{ site.url }}/",
+            
+                relatedTitleText:  "Produk Terkait",
+            
+        }; 
+        </script>
+</div>
+<div id='after-content-hidden'>
+<div class='call-to-action2-wrap'>
+</div>
+<div class='pb-wrapper' id='cc-wrapper'>
+<div class='pb-content' id='cc-content'>
+<div class='pb-main' id='cc-main'>
+<h2 class='cc-title'>ORDER VIA CHAT</h2>
+<div class='cc-detail-produk'>
+<p class='cc-nama-produk'>Produk : <strong>{% if page.title %}{{ page.title }}{% endif %}</strong></p>
+<p class='cc-harga-produk'>Harga : <strong></strong><span></span></p>
+<p class='cc-url-produk'>{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}</p>
+</div>
+<div class='cc-input'>
+<div class='cc-input-jmlhproduk'></div>
+<div class='cc-input-kontak'></div>
+<div class='cc-input-alamat'></div>
+</div>
+<div class='input-has-error'></div>
+<a class='cc-chat-wa-link' href='#'><button id='cc-chatwa' name='chatwa'></button></a>
+</div>
+</div>
+</div>
+<div class='pb-wrapper' id='cm-wrapper'>
+<div class='pb-content' id='cm-content'>
+<div class='pb-main' id='cm-main'>
+<h2 class='cm-title'>ORDER VIA MARKETPLACE</h2>
+<div class='cm-links'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class='comments comments-threaded' data-embed='true' data-num-comments='2' id='comments'>
+<h2 class='comments-title'>
+<span>Diskusi</span>
+</h2>
+<div class='comments-content'>
+<div id='comment-main'>
+<div class="comment-thread toplevel-thread">
+ <div id='disqus_thread'></div> 
+  </div>
+</div>
+<div class='comment-footer'>
+<div class='comment-form default-comment-form'>
+<a aria-label='comment form' href='https://www.blogger.com/comment/frame/6015663568293314492?po=955779608816552974&hl=id&skin=contempo' id='comment-editor-src'></a>
+<iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' title='comment-editor' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/4235886812-comment_from_post_iframe.js' type='text/javascript'></script>
+<script>
+                BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+            </script>
+<p class='comment-note'>
+Silakan berdikusi
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</article>
+</div>
+</div></div>
+</main>
+<aside id='footer-widget-wrapper'>
+<div id='footer-widget'>
+<div class='footer-widget-1 section' id='footer-widget-1'><div class='widget Label' data-version='2' id='Label1'>
+<div class='normalwidget-title'>
+<h2 class='title'>Label</h2>
+</div>
+
+<div class='widget-content list-label-widget-content'>
+<ul>
+  {% for post in site.posts limit:13 %}
+<li>
+<a class='label-name' href='{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}'>
+{{ post.author }}
+</a>
+</li>
+  {% endfor %}  
+</ul>
+</div>
+</div><div class='widget PageList' data-version='2' id='PageList1'>
+<div class='normalwidget-title'>
+<h2 class='title'>Halaman</h2>
+</div>
+<div class='widget-content'>
+<ul>
+<li>
+<a href='{{ site.url }}/p/kode-html-tombol-tombol.html'>Kode HTML Tombol-Tombol</a>
+</li>
+<li>
+<a href='{{ site.url }}/p/about.html'>About</a>
+</li>
+<li>
+<a href='{{ site.url }}/p/privacy-policy.html'>Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div></div>
+<div class='footer-widget-2 section' id='footer-widget-2'><div class='widget Profile' data-version='2' id='Profile1'>
+<div class='normalwidget-title'>
+<h2 class='title'>Mengenai Saya</h2>
+</div>
+<div class='widget-content individual'>
+<div class='profile-line1'>
+<div class='profile-img-wrap'>
+<a href='{{ site.url }}' rel='nofollow'>
+<img alt='Foto saya' class='lazyload' data-src='{{ site.avatar }}' height='113' src='data:,' width='113'/>
+<div class='lazy-loading'></div>
+</a>
+</div>
+<div class='profile-info has-location'>
+<a class='profile-link-author g-profile' href='{{ site.url }}' rel='author nofollow'>
+{{ site.title }}
+</a>
+<div class='profile-data location'>
+<span>Indonesia</span>
+</div>
+</div>
+</div>
+<div class='profile-line2'>
+<div class='profile-bio'>
+<div class='profile-textblock'>
+{{ site.description }}
+</div>
+<a class='profile-link' href='{{ site.url }}' rel='author noopener nofollow' target='_blank'>
+Lihat produk lengkapku
+</a>
+</div>
+</div>
+</div>
+</div><div class='widget PopularPosts' data-version='2' id='PopularPosts1'>
+<h2 class='title'>Populer</h2>
+<div class='widget-content'>
+{% for post in site.posts limit:3 %}
+<div class='popular-post'>
+<div class='popular-post-thumbnail'>
+<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title }}">
+<img alt='{{ post.title }}' class='lazyload' data-src='{{ post.image }}' height='100' src='data:,' width='100'/>
+<div class='lazy-loading'></div>
+</a>
+</div>
+<div class='popular-post-info'>
+<div class='popular-post-title'>
+<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}' title="{{ post.title }}">
+{{ post.title }}
+</a>
+</div>
+<div class='popular-post-snippet'>
+<div class="harga-produk">Rp&nbsp;{{ post.harga }}</div>
+</div>
+<div class='js-popular-post-snippet'></div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div></div>
+</div>
+</aside>
+<footer id='footer-wrapper'>
+<div class='socialicon-widget-container section' id='socialicon-widget-container'><div class='widget HTML' data-version='2' id='HTML637'>
+<div class='socialicon-widget'>
+  <a aria-label="facebook-icon" href="https://facebook.com/sabdaliterasipalu"><span class="social-icon facebook-icon"><i></i></span></a>
+  <a aria-label="whatsapp-icon" href="https://wa.me/6285186666836"><span class="social-icon whatsapp-icon"><i></i></span></a>
+  <a aria-label="instagram-icon" href="https://instagram.com/sabdaliterasipalu"><span class="social-icon instagram-icon"><i></i></span></a>
+  <a aria-label="tiktok-icon" href="https://www.tiktok.com/@sabdaliterasipalu"><span class="social-icon tiktok-icon"><i></i></span></a>
+  <a aria-label="icon-mail" href="mailto:sabdaliterasipalu@gmail.com"><span class="social-icon icon-mail"><i></i></span></a>
+</div>
+</div></div>
+<div class='footer-content section' id='footer-content'><div class='widget HTML' data-version='2' id='HTML80'>
+<div class='footer-text'>
+
+                    &#169; 2023 - <a href='{{ site.url }}/'>{{ site.title }}</a>
+</div>
+</div></div>
+<button aria-label='scrolltop' class='scrollToTopBtn'></button>
+</footer>
+</div>
+<script>
+var disqus_shortname = 'sabda-literasi-palu';
+var disqus_blogger_current_url = "{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}";
+if (!disqus_blogger_current_url.length) {
+disqus_blogger_current_url = "{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}";
+  }
+  var disqus_blogger_homepage_url = "{{ site.url }}";
+  var disqus_blogger_canonical_homepage_url = "{{ site.url }}";
+(function() {
+  var bloggerjs = document.createElement('script');
+  bloggerjs.type = 'text/javascript';
+  bloggerjs.async = true;
+  bloggerjs.src = '//'+disqus_shortname+'.disqus.com/blogger_item.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
+})();
+function lanjutBuy(){window.location.href = "{{ site.url }}{% if page.buy %}{{ page.buy | replace:'https://lynk.id/sabdaliterasi/','/buy/?id=' }}{% endif %}"}
+var rpplBlogUrl =  "{{ site.url }}/";
+</script><script src="{{ site.url }}/assets/js/kutoko.js"></script><div class='custom-javascript-footer section' id='custom-javascript-footer'><div class='widget HTML' data-version='2' id='HTML782'>
+</div></div>
+
+
+
+
+
+
+<div id="sitemap5" class="result hidden"><p id="judul" class="judul"></p><div class="ajax-search" id="ajax-search"><div>
+<ol class="ajax-search-results badan" id="badan">{% for post in site.posts limit:9999 %}<li data-search-term="{{ post.title }} {{ post.author }} {{ post.description }}" class="list-produk serrcok hidden"><p class="ajax-search-image loading"><img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}" style="display:block;width:60px;height:60px;"></p><h4 class="ajax-search-title"><a alt="{{ post.title }}" title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h4></li>{% endfor %}</ol></div></div></div>
+<style>
+/* ajax search */
+.ajax-search.hidden{display:none}
+.ajax-searc{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:340px!important;margin:0px auto;border-radius:8px;animation:fadeInDown .5s linear;background-color: rgb(54, 58, 62); color: rgb(217, 223, 229); width: 100%;overflow: auto;}
+.ajax-search-results-empty{text-align:center}
+.ajax-search h3{color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
+.ajax-search-results{text-align:left}
+.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:5px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
+.ajax-search li:hover{border-color:#f89000}
+.ajax-search li h4{font-size:13px;font-weight:500;margin:0 15px 0 0}
+.ajax-search li h4 a{color:#000;transition:all .3s}
+.ajax-search li h4 mark{background-color:transparent;color:#f89000;text-decoration:underline;transition:all .3s}
+.ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#f89000}
+.ajax-search-image{float:left;margin:0 10px 0 0}
+.ajax-search-image img{border-radius:5px}
+.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#f89000;color:#fff;font-size:13px;padding:7px 15px;border-radius:5px;margin:15px 3px 0 3px}
+.ajax-search-pager{overflow:hidden;clear:both;position:relative}.ajax-search li:nth-child(odd){animation:bounceInLeft 1.5s}
+.ajax-search li:nth-child(even){animation:bounceInRight 1.5s}
+.ajax-search ol {color:#232323;margin: 0;}
+li.hidden {
+    display: none;
+}
+/* animasi */
+@keyframes bounceInLeft{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:none;transform:none}}
+@keyframes bounceInRight{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:none;transform:none}}
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+div#Nohasil {
+    padding: 14px 14px;
+}
+/* css darkmode sesuaikan class ( .drK ) jika berbeda agar dapat berfungsi */
+.dark div#sitemap5{background:#363a3e!important;color:rgba(255,255,255,.85)}
+.dark .ajax-search li h4 a{color:#fff}
+.dark .ajax-search li h4 a:hover{color:#fff;text-decoration:underline}
+.dark .ajax-search-pager a{background:#294db4;color:#fff;border:0}
+.dark .ajax-search-pager a:hover{background:#1c2733;color:#fff}
+.dark .ajax-search li{background:#21262c;border:0;box-shadow:none}
+.dark .ajax-search li:hover{background:#1e1e1e}
+.dark .ajax-search h3{color:#fff}
+.dark .ajax-search ol {color:#fff}
+.dark  p#judul {color:#fff}
+
+  
+  p#judul {color: #5e5e5e;}
+  div#sitemap5 {
+    z-index: 9;
+    background: rgba(255,255,255,.89)!important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    box-shadow: 0 15px 10px -10px rgb(155 155 155 / 15%), 0 -15px 10px -10px rgb(155 155 155 / 15%);
+    max-height: 340px!important;
+    margin: 0px auto;
+    border-radius: 8px;
+    background-color: rgb(54, 58, 62);
+    color: rgb(217, 223, 229);
+    width: 75%;
+    overflow: auto;
+    position: fixed;
+    top: 115px;
+}#sitemap5{border-radius:6px;position:absolute;font-size:14px;font-size:1.4rem;background:#fff;top:100%;right:60px;opacity:0;width:0;cursor:pointer;text-align:center;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:top .2s ease-in-out;transition:top .2s ease-in-out;-webkit-box-shadow:0 5px 20px rgba(99,99,99,0.11);box-shadow:0 5px 20px rgba(99,99,99,0.11)}@media screen and (max-width:1000px){#sitemap5{right:30px}}@media screen and (max-width:700px){#sitemap5{right:70px}}@media screen and (max-width:480px){#sitemap5{right:60px}}@media screen and (max-width:320px){#sitemap5{right:55px}}#sitemap5::after{content:"";display:block;position:absolute !important;right:10px;top:-12px;bottom:100%;width:0;height:0;border-bottom:6px solid #fff;border-top:6px solid transparent;border-left:6px solid transparent;border-right:6px solid transparent}#sitemap5 form{padding:12px}#sitemap5 form input[type=text]{border-radius:4px;width:100%;padding:8px 10px;border:1px solid #e4eaee;outline:0;background:#fff;color:#555}#sitemap5 form input:focus{border:1px solid #e4eaee}#sitemap5{opacity:1;width:75%;top:86%;-webkit-transform:translateX(0);transform:translateX(0)}.hidden {
+    display: none !important;
+}
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+  $(function(){
+var scroll  = 'smooth';
+var start = 1,
+    max = 150,
+    sitemap5Arr = new Array(),
+    grup = new Array(),
+    key = new Array(),
+    abjad = '',
+    print = '',
+    nav = '';
+    
+  
+    
+    
+    
+    
+function scrollSitemap5() {
+  document.querySelectorAll('#sitemap5 div.nav div.ulng').forEach(function (Pp) {
+    
+  Pp.addEventListener('click', function () {
+  var lii = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+    for(var kk = 0; kk<lii.length; kk++){
+      if(lii){
+      lii[kk].classList.remove('hidden');
+      lii[kk].classList.add('showw');
+      };
+      document.getElementById("CariBook").reset();
+      var kam=document.getElementById('ulng');
+   kam.style.display='none';    
+      Menunu();
+      }
+    })
+  });
+  document.querySelectorAll('#sitemap5 .nav ol li').forEach(function (PpP) {
+        PpP.addEventListener('click', function () {
+           
+         
+   var ABJADD = '#sitemap5 .badan [data-value="' + this.innerHTML + '"]';
+           
+    document.getElementById("CariBook").reset();
+    var input =  this.innerText;
+	var filter = input.toLowerCase();
+	var ul = document.getElementById("badan");
+	var li = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+	for(var i = 0; i<li.length; i++){
+		var ahref = li[i];
+		if(ahref.getAttribute('data-value').toLowerCase().indexOf(filter) > -1){
+			li[i].classList.remove('hidden');
+            li[i].classList.add('showw');
+
+          
+		}else{
+			li[i].classList.add('hidden');
+            li[i].classList.remove('showw');
+          
+          
+
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+      
+Menunu()
+      
+      
+      
+	}
+   
+   var kam=document.getElementById('ulng');
+   kam.style.display='flex';    
+        
+        })
+    });
+    
+}
+
+
+
+});
+  
+
+  function Menunu(){      
+var kaka=document.getElementsByClassName('showw');
+var kaka1=document.getElementById('judul');
+var url_wa = 'https://api.whatsapp.com/send/'; 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
+      url_wa = 'whatsapp://send/'; 
+    }
+if (kaka.length > 0){
+        kaka1.innerHTML=''
+          }
+      else{
+          kaka1.innerHTML='Maaf Ebook yang Anda cari belum kami input.<br>HUBUNGI PENJUAL UNTUK REQUEST EBOOK<br><a href="'+url_wa+'?phone=6285186666836&amp;text=Halo%20min%20saya%20ingin%20memesan%20Ebook%2Cberikut%20datanya%3A%0A---%0AJudul%3A%0APenulis%3A%0APenerbit%3A%0A---%0Asaya%20berharap%20bisa%20segerah%20di%20upload%20di%20https%3A%2F%2Fsabdaliterasi%2Fpage%2Febook-shop" style="border: 2px solid; display: block; margin: 7px; padding: 2px; font-weight: 600;">KLIK DISINI</a>'
+          }};
+  
+  
+  
+  function prosesMenu(){
+	var input = document.getElementById("search-terms");
+	var filter = input.value.toLowerCase();
+	var ul = document.getElementById("badan");
+	var li = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+	for(var i = 0; i<li.length; i++){
+		var ahref = li[i];
+      if (filter == ''){
+      li[i].classList.add('hidden');
+      document.getElementById('sitemap5').classList.add('hidden'); 
+      }else if(ahref.getAttribute('data-search-term').toLowerCase().split(' ').join('').indexOf(filter.split(' ').join('')) > -1){
+			li[i].classList.remove('hidden');
+            li[i].classList.add('showw');
+		}
+      else{
+		  li[i].classList.add('hidden');
+          li[i].classList.remove('showw');
+        Menunu();document.getElementById('sitemap5').classList.remove('hidden'); 
+        }
+      
+	}
+};
+  
+  function Cari(){
+    var input = document.getElementById("search-terms");
+	var filter = input.value.toLowerCase();
+    var ul = document.getElementById("badan");
+	var li = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+	var kaka1=document.getElementById('judul');
+    
+    
+     if (filter !== ''){
+   
+   for(var i = 0; i<li.length; i++){
+    li[i].classList.add('hidden');
+    li[i].classList.remove('showw');
+    }
+    
+       setTimeout(prosesMenu, 500);
+       
+       kaka1.innerHTML="<h3>Loading...</h3>"
+       document.getElementById('sitemap5').classList.remove('hidden'); 
+     }else{
+     for(var i = 0; i<li.length; i++){
+    li[i].classList.add('hidden');
+    li[i].classList.remove('showw');
+       kaka1.innerHTML=""
+    }
+     }
+    
+  
+  }
+  
+  $(document).ready(function(){
+  $(".search-button").click(function(){
+    document.getElementById("search").reset();
+    var li = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+    var kaka1=document.getElementById('judul');
+    for(var i = 0; i<li.length; i++){
+    li[i].classList.add('hidden');
+    li[i].classList.remove('showw');
+    kaka1.innerHTML=""
+    document.getElementById('sitemap5').classList.add('hidden'); 
+    }
+  });
+});
+  document.addEventListener("click",function(e){
+    document.getElementById("search").reset();
+    var li = document.querySelectorAll("#sitemap5 .badan li.serrcok");
+    var kaka1=document.getElementById('judul');
+    for(var i = 0; i<li.length; i++){
+    li[i].classList.add('hidden');
+    li[i].classList.remove('showw');
+    kaka1.innerHTML=""
+    document.getElementById('sitemap5').classList.add('hidden'); 
+    }
+  })
+  
+  </script>
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
